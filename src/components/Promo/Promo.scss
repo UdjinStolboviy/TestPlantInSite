@@ -1,0 +1,126 @@
+.block-img-promo {
+  grid-area: 1 / 2 / 2 / 3;
+  transform: translate(20px, -10px);
+  @media (max-width: 990px) {
+    display: none;
+  }
+}
+.container {
+}
+.info-text-promo {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  @media (max-width: 860px) {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #242424;
+  }
+}
+
+.promo-site {
+  width: 70%;
+  display: inline;
+
+  width: 156px;
+  height: 40px;
+  padding-left: 28px;
+
+  background: #04bf94;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+  @media (max-width: 860px) {
+    width: 100%;
+  }
+  @media (max-width: 860px) {
+    margin-top: -20px;
+  }
+}
+
+.promo {
+  &__block {
+    height: 267px;
+
+    background: rgb(195, 234, 225);
+    border-radius: 16px;
+    margin-bottom: 48px;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    @media (max-width: 506px) {
+      margin-top: 10px;
+      background: rgb(207, 237, 230);
+    }
+  }
+  &__text {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 24px;
+    .img-promo-icon {
+      margin-top: 20px;
+
+      @media (max-width: 506px) {
+      }
+    }
+    @media (max-width: 506px) {
+      width: 117%;
+    }
+  }
+}
+.title-text-promo {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 10px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #04bf94;
+  @media (max-width: 1116px) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  @media (max-width: 860px) {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #04bf94;
+  }
+}
